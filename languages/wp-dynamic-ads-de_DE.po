@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"X-Generator: Poedit 2.4.1\n"
+
+msgid "Ad keywords"
+msgstr ""
+
+msgid "Ad keywords (separated by \";\""
+msgstr ""
+
+msgid "Ads"
+msgstr ""
+
+msgid "Ad"
+msgstr ""
+
+msgid "All ads"
+msgstr ""
+
+msgid "View ad"
+msgstr ""
+
+msgid "Add New ad"
+msgstr ""
+
+msgid "Add New"
+msgstr ""
+
+msgid "Edit ad"
+msgstr ""
+
+msgid "Update ad"
+msgstr ""
+
+msgid "Search ad"
+msgstr ""
+
+msgid "Not Found"
+msgstr ""
+
+msgid "Not found in trash"
+msgstr ""
+
+msgid "dynamic-ad"
+msgstr ""
+
+msgid "Dynamic ads"
+msgstr ""
