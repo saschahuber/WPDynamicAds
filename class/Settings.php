@@ -55,7 +55,7 @@ class WPDA_Settings{
 	public function settings_page_display() {
 		?>
 		<div class="wrap">
-			<h1>WP Autoblog</h1>
+			<h1>WP Dynamic Ads</h1>
 
 			<?php $this->get_plugin_info(); ?>
 
