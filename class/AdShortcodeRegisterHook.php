@@ -17,13 +17,13 @@ class WPDA_AdShortcodeRegisterHook{
 
 			$displayed_ads = array();
 			
+			$output = '';
 			if ( $queried_object ) {
 				$post_id = $queried_object->ID;
 				
 				$ads = get_posts(array('post_type' => 'dynamic-ad'));
 				
 				foreach($ads as $ad){
-					$content = $ad->post_content;
 					$keywords_data = get_post_meta($ad->ID, 'wpda_ad_keywords', true);
 					
 					$score = $this->post_contains($post_id, $keywords_data);
@@ -35,7 +35,6 @@ class WPDA_AdShortcodeRegisterHook{
 			
 			usort($displayed_ads, array($this, 'ad_order_function'));
 			
-			$output = '';
 			$counter = 0;
 			$asins = array();
 			foreach($displayed_ads as $displayed_ad){
@@ -106,7 +105,7 @@ class WPDA_AdShortcodeRegisterHook{
 			}
 		}
 		
-		return intval((floatval($score)/($first_position+1))*10000);
+		return (floatval($score)/($first_position+1));
 	}
 }
 

@@ -55,15 +55,16 @@ class WPDA_MetaBoxRegisterHook{
 			
 			switch($field['type']){
 				case 'text':
-					$ad_meta[$field['name']] = sanitize_textarea_field( $_POST[$field['name']] );
+					$ad_meta[$field['field']] = sanitize_textarea_field($_POST[$field['field']]);
+					break;
 				case 'bool':
-					$ad_meta[$field['name']] = sanitize_text_field($_POST[$field['name']]);
+					$ad_meta[$field['field']] = sanitize_text_field($_POST[$field['field']]);
 					break;
 				case 'html':
-					$ad_meta[$field['name']] = sanitize_text_field($_POST[$field['name']]);
+					$ad_meta[$field['field']] = sanitize_text_field($_POST[$field['field']]);
 					break;
 				default:
-					$ad_meta[$field['name']] = sanitize_text_field($_POST[$field['name']]);
+					$ad_meta[$field['field']] = sanitize_text_field($_POST[$field['field']]);
 					break;
 			}
 		}

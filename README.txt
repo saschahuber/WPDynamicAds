@@ -20,6 +20,8 @@ You can also set a maximum number of ads that get displayed on a post.
 The ads are ordered based on relevance to the current post. You can set multiple properties to configure the calculation of the relevance-score.
 
 The content of your app is up to you, you can use images, plaintext and even shortcodes.
+
+Just place the shortcode [dynamic_ads] whereever you want to display your ads!
  
 == Installation ==
  

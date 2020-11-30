@@ -4,7 +4,7 @@
  * Plugin URI: https://sascha-huber.com/projekte/wp-dynamic-ads
  * Text Domain: wp-dynamic-ads
  * Domain Path: /languages
- * Description: Aggregator plugin to import content from various sources
+ * Description: Diplay content based on self defined keywords
  * Version: 0.1
  * Author: Sascha Huber
  * Author URI: https://sascha-huber.com
