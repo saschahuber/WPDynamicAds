@@ -5,7 +5,7 @@
  * Text Domain: wp-dynamic-ads
  * Domain Path: /languages
  * Description: Diplay content based on self defined keywords
- * Version: 0.2
+ * Version: 0.3
  * Author: Sascha Huber
  * Author URI: https://sascha-huber.com
 */
