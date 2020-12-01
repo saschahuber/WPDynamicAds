@@ -26,7 +26,13 @@ Just place the shortcode [dynamic_ads] whereever you want to display your ads!
 == Installation ==
  
 == Changelog ==
- 
+
+= 0.3 =
+Some Fixes and shortcode-compatibility in ads
+
+= 0.2 =
+Some Minor Fixes
+
 = 0.1 =
 Initial plugin release
  

@@ -46,7 +46,7 @@ class WPDA_AdShortcodeRegisterHook{
 				$counter++;
 			}
 			
-			return $output;
+			return do_shortcode($output);
 		}
 		catch(Exception $e){
 			return $e;

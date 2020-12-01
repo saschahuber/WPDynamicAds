@@ -38,7 +38,7 @@ class WPDA_MetaBoxRegisterHook{
         }
 
 		$meta_fields = array(
-			array('field' => 'wpda_ad_keywords', 'type' => 'text')
+			array('name' => 'wpda_ad_keywords', 'type' => 'text')
 		);
 
 		$ad_meta = array();
@@ -46,25 +46,25 @@ class WPDA_MetaBoxRegisterHook{
 		foreach($meta_fields as $field){
 			//Clean checkboxes
 			if($field['type'] == 'bool'){
-				delete_post_meta($post_id, $field['field']);
+				delete_post_meta($post_id, $field['name']);
 			}
 			
-			if ( ! isset( $_POST[$field['field']] ) || ! wp_verify_nonce( $_POST[$field['field'].'_field'], basename(__FILE__) ) ) {
+			if ( ! isset( $_POST[$field['name']] ) || ! wp_verify_nonce( $_POST[$field['name'].'_field'], basename(__FILE__) ) ) {
 				continue;
 			}
 			
 			switch($field['type']){
 				case 'text':
-					$ad_meta[$field['field']] = sanitize_textarea_field($_POST[$field['field']]);
+					$ad_meta[$field['name']] = sanitize_textarea_field($_POST[$field['name']]);
 					break;
 				case 'bool':
-					$ad_meta[$field['field']] = sanitize_text_field($_POST[$field['field']]);
+					$ad_meta[$field['name']] = sanitize_text_field($_POST[$field['name']]);
 					break;
 				case 'html':
-					$ad_meta[$field['field']] = sanitize_text_field($_POST[$field['field']]);
+					$ad_meta[$field['name']] = sanitize_text_field($_POST[$field['name']]);
 					break;
 				default:
-					$ad_meta[$field['field']] = sanitize_text_field($_POST[$field['field']]);
+					$ad_meta[$field['name']] = sanitize_text_field($_POST[$field['name']]);
 					break;
 			}
 		}
